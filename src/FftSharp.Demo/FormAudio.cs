@@ -119,7 +119,7 @@ namespace FftSharp.Demo
         private void UpdateFFT(double[] audio)
         {
             System.Numerics.Complex[] spectrum = FftSharp.FFT.Forward(audio);
-            double[] ys = cbLog.Checked ? FftSharp.FFT.Power(spectrum) : FftSharp.FFT.Magnitude(spectrum);
+            double[] ys = cbLog.Checked ? FftSharp.FFT.Power(spectrum) : FftSharp.FFT.Amplitude(spectrum);
             string yLabel = cbLog.Checked ? "Power (dB)" : "Magnitude (RMS²)";
 
             plotFFT.Plot.Clear();

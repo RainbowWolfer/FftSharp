@@ -92,7 +92,7 @@ namespace FftSharp.Tests
         public void Test_VsNumpy_FftMag()
         {
             System.Numerics.Complex[] spectrum = FftSharp.FFT.Forward(values);
-            double[] fftMag = FftSharp.FFT.Magnitude(spectrum);
+            double[] fftMag = FftSharp.FFT.Amplitude(spectrum);
             double[] numpyFftMag = LoadData.Double("fftMag.txt");
 
             Assert.AreEqual(numpyFftMag.Length, fftMag.Length);
@@ -154,7 +154,7 @@ namespace FftSharp.Tests
                 0.35936842267425245, 0.2704107530566828, 0.05312499999999987 };
 
             System.Numerics.Complex[] spectrum = FftSharp.FFT.Forward(values);
-            double[] mag = FftSharp.FFT.Magnitude(spectrum);
+            double[] mag = FftSharp.FFT.Amplitude(spectrum);
 
             Assert.AreEqual(numpyFftMag.Length, mag.Length);
             for (int i = 0; i < numpyFftMag.Length; i++)
@@ -174,7 +174,7 @@ namespace FftSharp.Tests
                 0.34613039450473, 0.1401344145671993, 0.2637216582804615, 0.5006617594915167, 0.04499999999999993 };
 
             System.Numerics.Complex[] spectrum = FftSharp.FFT.Forward(values);
-            double[] mag = FftSharp.FFT.Magnitude(spectrum);
+            double[] mag = FftSharp.FFT.Amplitude(spectrum);
 
             Assert.AreEqual(numpyFftMag.Length, mag.Length);
             for (int i = 0; i < numpyFftMag.Length; i++)
@@ -193,7 +193,7 @@ namespace FftSharp.Tests
             double[] numpyFftMag = { 1.7025, 0.706710339966861, 1.1495760087962865, 0.33016737480242325, 0.645 };
 
             System.Numerics.Complex[] spectrum = FftSharp.FFT.Forward(values);
-            double[] mag = FftSharp.FFT.Magnitude(spectrum);
+            double[] mag = FftSharp.FFT.Amplitude(spectrum);
 
             Assert.AreEqual(numpyFftMag.Length, mag.Length);
             for (int i = 0; i < numpyFftMag.Length; i++)
@@ -212,7 +212,7 @@ namespace FftSharp.Tests
             double[] numpyFftMag = { 1.3225, 0.6783251432757007, 0.875 };
 
             System.Numerics.Complex[] spectrum = FftSharp.FFT.Forward(values);
-            double[] mag = FftSharp.FFT.Magnitude(spectrum);
+            double[] mag = FftSharp.FFT.Amplitude(spectrum);
 
             Assert.AreEqual(numpyFftMag.Length, mag.Length);
             for (int i = 0; i < numpyFftMag.Length; i++)
@@ -231,7 +231,7 @@ namespace FftSharp.Tests
             double[] numpyFftMag = { 1.24, 1.8199999999999998 };
 
             System.Numerics.Complex[] spectrum = FftSharp.FFT.Forward(values);
-            double[] mag = FftSharp.FFT.Magnitude(spectrum);
+            double[] mag = FftSharp.FFT.Amplitude(spectrum);
 
             Assert.AreEqual(numpyFftMag.Length, mag.Length);
             for (int i = 0; i < numpyFftMag.Length; i++)

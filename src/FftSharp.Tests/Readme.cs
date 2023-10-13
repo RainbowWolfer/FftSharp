@@ -22,7 +22,7 @@ namespace FftSharp.Tests
 
             // Or get the spectral power (dB) or magnitude (RMS²) as real numbers
             double[] fftPower = FftSharp.FFT.Power(spectrum);
-            double[] fftMagnitude = FftSharp.FFT.Magnitude(spectrum);
+            double[] fftMagnitude = FftSharp.FFT.Amplitude(spectrum);
         }
 
         [Test]

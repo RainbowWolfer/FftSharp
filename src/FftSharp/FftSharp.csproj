@@ -2,21 +2,21 @@
 
     <PropertyGroup>
         <TargetFrameworks>netstandard2.0;net6.0</TargetFrameworks>
-        <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+        <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
         <OutputType>Library</OutputType>
-        <PackageProjectUrl>https://github.com/swharden/FftSharp</PackageProjectUrl>
+        <PackageProjectUrl></PackageProjectUrl>
         <PackageLicenseExpression>MIT</PackageLicenseExpression>
-        <Description>A .NET Standard library for computing the Fast Fourier Transform (FFT) of real or complex data</Description>
-        <Authors>Scott Harden</Authors>
-        <Company>Harden Technologies, LLC</Company>
+        <Description>MAX FFT</Description>
+        <Authors>MAX</Authors>
+        <Company>MAX</Company>
         <PackageIcon>icon.png</PackageIcon>
         <PackageReadmeFile>README.md</PackageReadmeFile>
-        <RepositoryUrl>https://github.com/swharden/FftSharp</RepositoryUrl>
-        <PackageTags>fft ifft fourier transform audio signal sound filter window hanning hamming</PackageTags>
-        <PackageReleaseNotes>https://github.com/swharden/FftSharp/releases</PackageReleaseNotes>
+        <RepositoryUrl></RepositoryUrl>
+        <PackageTags></PackageTags>
+        <PackageReleaseNotes></PackageReleaseNotes>
         <IncludeSymbols>true</IncludeSymbols>
         <DocumentationFile>FftSharp.xml</DocumentationFile>
-        <Version>2.1.0</Version>
+        <Version>2.1.1-max</Version>
         <AssemblyVersion>2.1.0.0</AssemblyVersion>
         <FileVersion>2.1.0.0</FileVersion>
         <NoWarn>1591</NoWarn>
@@ -27,6 +27,7 @@
         <Deterministic>true</Deterministic>
         <ContinuousIntegrationBuild>true</ContinuousIntegrationBuild>
         <LangVersion>10</LangVersion>
+        <PackageRequireLicenseAcceptance>False</PackageRequireLicenseAcceptance>
     </PropertyGroup>
 
     <ItemGroup>

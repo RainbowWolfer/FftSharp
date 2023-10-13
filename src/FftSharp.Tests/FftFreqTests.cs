@@ -21,7 +21,7 @@ namespace FftSharp.Tests
 
             // get FFT
             System.Numerics.Complex[] spectrum = FftSharp.FFT.Forward(samples);
-            double[] fft = FftSharp.FFT.Magnitude(spectrum);
+            double[] fft = FftSharp.FFT.Amplitude(spectrum);
             double[] fftKnown = { 0, 0, 1, 0, 0, 0, 0, 0, 0 };
             Assert.That(fft, Is.EqualTo(fftKnown).Within(1e-10));
 
@@ -56,7 +56,7 @@ namespace FftSharp.Tests
             double[] signal = new double[pointCount];
 
             System.Numerics.Complex[] spectrum = FftSharp.FFT.Forward(signal);
-            double[] fft = FftSharp.FFT.Magnitude(spectrum);
+            double[] fft = FftSharp.FFT.Amplitude(spectrum);
 
             double[] freqsFullKnown = {
                 0,  1000,  2000,  3000,  4000,  5000,  6000,  7000,

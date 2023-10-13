@@ -71,7 +71,7 @@ namespace FftSharp.Demo
             System.Numerics.Complex[] spectrum = FftSharp.FFT.Forward(zeroPadded);
             double[] fftPower = cbDecibel.Checked ?
                 FftSharp.FFT.Power(spectrum) :
-                FftSharp.FFT.Magnitude(spectrum);
+                FftSharp.FFT.Amplitude(spectrum);
             double[] fftFreq = FftSharp.FFT.FrequencyScale(fftPower.Length, SAMPLE_RATE);
 
             // determine peak frequency
